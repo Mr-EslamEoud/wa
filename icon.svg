@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0fdf4" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background with Safe Margin for Maskable icons -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+
+  <!-- Inner Soft Ring -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#ffffff" stroke-opacity="0.15" stroke-width="4" />
+
+  <!-- Main Chat Bubble / Send Shield -->
+  <g filter="url(#dropShadow)">
+    <path d="M256 100 C170 100 100 166 100 248 C100 279 110 307 128 331 L112 396 C110 404 118 410 125 406 L193 378 C213 388 234 394 256 394 C342 394 412 328 412 248 C412 166 342 100 256 100 Z" fill="url(#bubbleGrad)" />
+  </g>
+
+  <!-- WhatsApp & Send Emblem Inside Bubble -->
+  <!-- Paper Airplane / Fast Direct Send Arrow -->
+  <g transform="translate(160, 150) scale(0.78)">
+    <path d="M40 120 L210 25 L100 195 L90 140 L160 70 L70 110 Z" fill="#059669" />
+    <path d="M100 195 L145 130 L210 25 Z" fill="#10b981" />
+    <!-- Monogram ES for Eslam Soud -->
+    <text x="50" y="225" font-family="'Cairo', sans-serif" font-size="62" font-weight="900" fill="#065f46" letter-spacing="2">ES SENDER</text>
+  </g>
+
+  <!-- Subtle Badge: Verified Fast Sender Checkmark -->
+  <circle cx="360" cy="150" r="30" fill="#10b981" stroke="#ffffff" stroke-width="5" />
+  <path d="M348 150 L356 158 L374 140" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
